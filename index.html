@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Anta&family=Orbitron:wght@600&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <title>Timer</title>
+</head>
+<body>
+   <i class="fa-solid fa-chevron-down arrow_time_required_menu"></i>
+   <div class="container_time_required">
+      <div class="work_container">
+         <h2 class="work_tittle">Work Time</h2>
+         <div class="work_inputs time_inputs">
+            <label for="minutes" class="label_work label_time_required label_work_min">
+               <span class="span_time span_work_min">min</span>
+               <input type="number" class="input_time_required" id="work_minutes_required" placeholder="00">
+            </label>
+            <span class="time_required_colon">:</span>
+            <label for="seconds" class="label_work label_time_required label_work_sec">
+               <span class="span_time span_work_sec">sec</span>
+               <input type="number" class="input_time_required" id="work_seconds_required" placeholder="00">
+            </label>
+         </div>
+      </div>
+      <div class="break_container">
+         <h2 class="break_tittle">Break Time</h2>
+         <div class="break_inputs time_inputs">
+            <label for="minutes" class="label_break label_time_required label_break_min">
+               <span class="span_time span_break_min">min</span>
+               <input type="number" class="input_time_required" id="break_minutes_required" placeholder="00">
+            </label>
+            <span class="time_required_colon">:</span>
+            <label for="seconds" class="label_break label_time_required label_break_sec">
+               <span class="span_time span_break_sec">sec</span>
+               <input type="number" class="input_time_required" id="break_seconds_required" placeholder="00">
+            </label>
+         </div>
+      </div>
+   </div>
+   <div class="main_content">
+      <div class="timer_content">
+         <h1 class="timer_tittle">Timer</h1>
+         <h2 class="timer_type">Work Time</h2>
+         <p id="timer">00:00</p>
+      </div>
+      <div class="controll_buttons">
+         <div class="container_buttons_row1">
+            <button class="start_timer button_timer">Start</button>
+            <button class="pause_timer button_timer">Pause</button>
+         </div>
+         <button class="reset_timer button_timer">Reset</button>
+      </div>
+   </div>
+   
+
+   <script src="script.js"></script>
+</body>
+</html>
